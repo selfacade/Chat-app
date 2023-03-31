@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd server && npm install && cd ../public && npm install && npm run build",
-    "start": "cd server && node index.js",
+    "build": "cd public && npm install && npm run build && cd ../server && npm install",
+    "start": "cd server && nodemon server.js",  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
